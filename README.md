@@ -24,12 +24,12 @@ java.lang.module.FindException: Module org.example.jpms.api not found, required 
 For fix that issue we need to use `named module` for [`app`](/app) but that add some difficulties for run the server.
 The following list explain what it's possible for achieve that.
 
-1. Have a launcher jar that download/extract all needed libraries/modules (like [PaperClip](https://github.com/PaperMC/Paperclip))
+1. **[ideal]** Have a launcher jar that download/extract all needed libraries/modules (like [PaperClip](https://github.com/PaperMC/Paperclip))
 
-    **PS**: without that we need copy all required libraries into an folder and run the app with something like that :
+    **PS**: without that we need copy all required libraries into a folder and run the app with something like that :
 
     ```sh
     java -p libs:. -m org.example.jpms
     ```
 
-2. Keep the fatjar but download/extract api into an folder and load it into plugin `ModuleLayer`.
+2. Keep the fatjar but download/extract api into a folder and load it into plugin `ModuleLayer`.

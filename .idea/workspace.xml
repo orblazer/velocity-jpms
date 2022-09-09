@@ -4,49 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb123d31-c67f-4897-8e3b-6e8eb63b3115" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/example/jpms/api/API.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/example/jpms/api/plugin/Dependency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/example/jpms/api/plugin/Plugin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/example/jpms/api/plugin/PluginContainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/example/jpms/api/plugin/PluginDescription.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/example/jpms/api/plugin/annotation/DataDirectory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/example/jpms/api/plugin/meta/PluginDependency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/module-info.java.disabled" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/example/jpms/app/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/example/jpms/app/Bootstrap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/example/jpms/app/Version.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/example/jpms/app/plugin/PluginDependencyUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/example/jpms/app/plugin/PluginManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/example/jpms/app/plugin/loader/PluginContainerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/example/jpms/app/plugin/loader/PluginDescriptionImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/example/jpms/app/plugin/loader/java/JavaPluginDescription.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/example/jpms/app/plugin/loader/java/JavaPluginDescriptionCandidate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/example/jpms/app/plugin/loader/java/JavaPluginLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/example/jpms/app/plugin/loader/java/PluginModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/log4j2.component.properties " afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugin/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugin/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugin/src/main/java/org/example/plugin/PluginMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-    </list>
+    <list default="true" id="bb123d31-c67f-4897-8e3b-6e8eb63b3115" name="Changes" comment="initial commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -273,6 +231,14 @@
       <option name="presentableId" value="Default" />
       <updated>1662623714643</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1662681750958</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662681750958</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
