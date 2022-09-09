@@ -1,0 +1,39 @@
+plugins {
+    id 'java-library'
+}
+
+version '1.0-SNAPSHOT'
+
+sourceSets {
+    ap {
+        compileClasspath += main.compileClasspath + main.output
+    }
+}
+
+dependencies {
+    compileOnly 'org.checkerframework:checker-qual:3.25.0'
+
+    implementation 'com.google.guava:guava:31.1-jre'
+    implementation 'com.google.code.gson:gson:2.9.1'
+    implementation 'com.google.inject:guice:5.1.0'
+}
+
+task javadocJar(type: Jar) {
+    classifier 'javadoc'
+    from javadoc
+}
+
+task sourcesJar(type: Jar) {
+    classifier 'sources'
+    from sourceSets.main.allSource
+    from sourceSets.ap.output
+}
+
+jar {
+    from sourceSets.ap.output
+}
+
+artifacts {
+    archives javadocJar
+    archives sourcesJar
+}

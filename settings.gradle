@@ -1,0 +1,5 @@
+rootProject.name = 'jpms'
+include 'plugin'
+include 'app'
+include 'api'
+

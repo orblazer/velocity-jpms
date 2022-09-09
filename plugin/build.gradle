@@ -1,0 +1,16 @@
+version '1.0-SNAPSHOT'
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'org.example.plugin.PluginMain'
+        attributes 'Implementation-Title': 'Example plugin'
+        attributes 'Implementation-Version': project.version
+        attributes 'Velocity-authors': 'orblazer'
+        attributes 'Velocity-urls': 'https://example.org'
+    }
+}
+
+dependencies {
+    compileOnly project(':api')
+    annotationProcessor project(':api')
+}
