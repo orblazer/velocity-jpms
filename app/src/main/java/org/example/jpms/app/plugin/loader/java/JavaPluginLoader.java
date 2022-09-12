@@ -38,10 +38,16 @@ public class JavaPluginLoader {
             dependencies.add(toDependencyMeta(dependency));
         }
 
+        // Retrieve plugin version
+        String version = plugin.version();
+        if (version.isEmpty()) {
+            version = source.getDescriptor().version().map(ModuleDescriptor.Version::toString).orElse("");
+        }
+
         return new JavaPluginDescriptionCandidate(
                 source.getName(),
                 plugin.name(),
-                Optional.of(plugin.version()).or(() -> source.getDescriptor().version().map(ModuleDescriptor.Version::toString)).orElse(""),
+                version,
                 plugin.description(),
                 plugin.url(),
                 List.of(plugin.authors()),
