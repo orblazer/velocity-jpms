@@ -1,15 +1,8 @@
-import com.github.jengelman.gradle.plugins.shadow.transformers.Log4j2PluginsCacheFileTransformer
-
 plugins {
     id 'application'
-    id 'com.github.johnrengelman.shadow' version '7.1.2'
 }
 
 version '1.0-SNAPSHOT'
-
-shadowJar {
-    transform(Log4j2PluginsCacheFileTransformer)
-}
 
 jar {
     manifest {
@@ -41,13 +34,6 @@ dependencies {
 application {
     mainClassName = 'org.example.jpms.app.Bootstrap'
     mainModule = 'org.example.jpms'
-}
 
-shadowJar {
-    // Exclude Checker Framework annotations
-    exclude 'org/checkerframework/checker/**'
-}
-
-artifacts {
-    archives shadowJar
+    executableDir = ''
 }

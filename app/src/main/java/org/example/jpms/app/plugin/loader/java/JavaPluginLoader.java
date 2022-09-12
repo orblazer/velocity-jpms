@@ -2,7 +2,6 @@ package org.example.jpms.app.plugin.loader.java;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
-import org.apache.logging.log4j.LogManager;
 import org.example.jpms.api.plugin.Dependency;
 import org.example.jpms.api.plugin.Plugin;
 import org.example.jpms.api.plugin.PluginContainer;
@@ -13,7 +12,9 @@ import org.example.jpms.app.plugin.loader.PluginContainerImpl;
 
 import java.lang.module.ModuleDescriptor;
 import java.nio.file.Path;
-import java.util.*;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 public class JavaPluginLoader {
     private final App app;
@@ -26,9 +27,9 @@ public class JavaPluginLoader {
 
 
     public PluginDescription loadCandidate(Module source) throws Exception {
-        Plugin plugin = source.getClass().getAnnotation(Plugin.class);
+        Plugin plugin = source.getAnnotation(Plugin.class);
         if (plugin == null) {
-            throw new Exception("Invalid plugin, no @Plugin on " + source.getClass().getCanonicalName());
+            throw new Exception("Invalid plugin, no @Plugin in module-info.java");
         }
 
         Set<PluginDependency> dependencies = new HashSet<>();

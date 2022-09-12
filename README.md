@@ -2,7 +2,30 @@
 
 This repo is a proof of concept for implementing JPMS on [Velocity](https://velocitypowered.com/) plugins.
 
-## Current State (`BROKEN`)
+## Current State
+
+### When [`app`](/app) is module : `SUCCESS` (*with warning*)
+
+In this mode, currently we need to use `distribution` archive (at `app/build/distributions`) with embedded script or use
+
+```shell
+java -p lib -m org.example.jpms
+```
+
+#### Warning generated
+
+SLF4J warn with the following message because in 2.0.x is required to use `ServiceLoader`
+
+```txt
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions prior to 1.8.
+SLF4J: Ignoring binding found at [jar:file:///home/orblazer/dev/java/test/lib/log4j-slf4j-impl-2.18.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+```
+
+### When [`app`](/app) is fatjar : `BROKEN`
 
 This is currently broken due to the fatjar for [`app`](/app), so that generate following error because the [`api`](/api)
 is not considerate as a module.
